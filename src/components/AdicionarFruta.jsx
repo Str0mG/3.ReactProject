@@ -1,10 +1,12 @@
 import React, {useState} from "react";
-
+import { useDispatch } from "react-redux";
+import {actions} from '../actions/frutas.action';
 
 const AdicionarFruta = () => {
     const [nome, setNome] = useState('');
     const [quantidade, setQuantidade] = useState(0);
 
+    const dispatch = useDispatch();
 
     const adicionarFruta = event => {
         event.preventDefault();
@@ -15,7 +17,7 @@ const AdicionarFruta = () => {
             quantidade
         }
 
-        console.log("Fruta adicionada com sucesso!", fruta);
+        dispatch(actions.adicionar(fruta));
     }
 
     return(
