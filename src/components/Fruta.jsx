@@ -16,7 +16,7 @@ const Fruta = ({fruta}) => {
                     <strong>Quantidade: </strong>{fruta.quantidade}
                 </li>
             </ul>
-            <button onClick={()=> dispatch(actions.remover(fruta.id))}>Remover</button>
+            <button onClick={()=> dispatch(actions.remover(fruta.id))}>&times;</button>
         </div>
     )
 }
