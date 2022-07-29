@@ -14,4 +14,5 @@ const actions = {
 }
 
 // Export the actions
+//teste
 export {actions};
