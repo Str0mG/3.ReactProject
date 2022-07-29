@@ -9,6 +9,7 @@ const actions = {
     remover: id => ({
         type: actionTypes.REMOVER_FRUTA,
         payload: id
+        
     })
 }
 
