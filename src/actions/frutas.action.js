@@ -13,7 +13,4 @@ const actions = {
     })
 }
 
-// Export the actions
-//teste
-//aaa
 export {actions};
